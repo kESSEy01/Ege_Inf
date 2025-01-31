@@ -241,17 +241,31 @@
 ###залупня ебаная
 #endregion
 #region 18266 (kege) x&57=0 ∨(x&23=0→¬(x&A=0))
-def f(x, A):
-    l1 = x & 57 == 0
-    l2 = x & 23 == 0
-    l3 = x & A != 0
-    return l1 or (l2 <= l3)
-for A in range(300):
-    flag = True
-    for x in range(1000):
-        if not(f(x,A)):
-            flag = False
-    if flag:
-        print(A)
-        break
+# def f(x, A):
+#     l1 = x & 57 == 0
+#     l2 = x & 23 == 0
+#     l3 = x & A != 0
+#     return l1 or (l2 <= l3)
+# for A in range(300):
+#     flag = True
+#     for x in range(1000):
+#         if not(f(x,A)):
+#             flag = False
+#     if flag:
+#         print(A)
+#         break
+#endregion
+#region 18175 (kege)
+# def f(x,A):
+#     l1 = x%7 != 0
+#     l2 = x%13 == 0
+#     l3 = x > A - 40
+#     return ((l1 and l2) <= l3) == 1
+# for A in range(500):
+#     flag = True
+#     for x in range(100000):
+#         if not(f(x, A)):
+#             flag = False
+#     if flag:
+#         print(A)
 #endregion
