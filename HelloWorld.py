@@ -157,7 +157,7 @@
 #     if flag == False:
 #         print(A)
 #endregion
-#region 34546(решуегэ)
+# region 34546(решуегэ)
 # s = []
 # for amin in range(1,100):
 #     for amax in range(amin, 100):
@@ -240,7 +240,7 @@
 # print(min(s))
 ###залупня ебаная
 #endregion
-#region 18266 (kege) x&57=0 ∨(x&23=0→¬(x&A=0))
+#region 18266 (kege)
 # def f(x, A):
 #     l1 = x & 57 == 0
 #     l2 = x & 23 == 0
@@ -263,9 +263,106 @@
 #     return ((l1 and l2) <= l3) == 1
 # for A in range(500):
 #     flag = True
-#     for x in range(100000):
+#     for x in range(1000):
+#         if not(f(x, A)):
+#             flag = False
+#     if flag:
+#         print(f"FRIENDLY THUG {A} NGG")
+#endregion
+#region хз
+# def f(x, y, A):
+#     return (x - y >= 39) or (y <= x) or (y >= A - 20)
+# for A in range(100):
+#     flag = True
+#     for x in range(1,300):
+#         if not(flag):
+#             break
+#         for y in range(1,300):
+#             if not(f(x, y, A)):
+#                 flag = False
+#     if flag:
+#         print(A)
+#endregion
+#region 18044 (kege)
+# def f(x, amin, amax):
+#     l1 = 32 <= x <= 68
+#     l2 = 54 <= x <= 76
+#     l3 = not(amin <= x <= amax)
+#     return not(l1 or l2) == l3
+# s = []
+# for amin in range(300):
+#     for amax in range(amin, 300):
+#         flag = True
+#         for i in range(-1000,1000):
+#             x = i/2
+#             if not(f(x, amin, amax)):
+#                 flag = False
+#         if flag:
+#             print(amax-amin+1)
+#             s.append(amax-amin+1)
+# print(min(s))
+#endregion
+#region 17528 (kege)
+# def f(x, amin, amax):
+#     l1 = amin <= x <= amax
+#     l2 = 75 <= x <= 118
+#     l3 = 25 <= x <= 73
+#     return (l1 and not(l2)) <= (l3 or l2)
+# s = []
+# for amin in range(500):
+#     for amax in range(amin, 500):
+#         flag = True
+#         for x in range(500):
+#             if not(f(x, amin, amax)):
+#                 flag = False
+#         if flag:
+#             s.append(amax-amin)
+# print(max(s))
+#endregion
+#region 34546 (kege)
+# def f(x, A):
+#     l1 = x%A != 0
+#     l2 = x%14 == 0
+#     l3 = x%4 != 0
+#     return l1 <= (l2 <= l3)
+# for A in range(1, 300):
+#     flag = True
+#     for x in range(1, 30000):
 #         if not(f(x, A)):
 #             flag = False
 #     if flag:
 #         print(A)
 #endregion
+# #region 16262 (kege)
+# def f(x, y, A):
+#     return ((A < x) or (x**2 - 7 * x + 10 > 0)) and ((A >= y) or (y**2 + 7 * y + 12 > 0))
+# s = 0
+# for A in range(-300,300):
+#     flag = True
+#     for x in range(-500, 500):
+#         if not(flag):
+#             break
+#         for y in range(-500, 500):
+#             if not(f(x, y, A)):
+#                 flag = False
+#     if flag:
+#         s+=1
+#         print(s)
+#endregion
+#region 15330 (kege) (x∈C)→((¬(x∈A)∧(x∈B))→¬(x∈C))
+def f(x, amin, amax):
+    l1 = 47 <= x <= 115
+    l2 = not(amin <= x <= amax)
+    l3 = 24 <= x <= 90
+    l4 = not(l1)
+    return l1 <= ((l2 and l3) <= l4)
+s = []
+for amin in range(300):
+    for amax in range(amin, 300):
+        flag = True
+        for x in range(-1000, 1000):
+            if not(f(x, amin, amax)):
+                flag = False
+        if flag:
+            s.append(amax - amin)
+print(min(s))
