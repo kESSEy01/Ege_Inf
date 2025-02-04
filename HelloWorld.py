@@ -349,20 +349,93 @@
 #         s+=1
 #         print(s)
 #endregion
+
 #region 15330 (kege) (x∈C)→((¬(x∈A)∧(x∈B))→¬(x∈C))
-def f(x, amin, amax):
-    l1 = 47 <= x <= 115
-    l2 = not(amin <= x <= amax)
-    l3 = 24 <= x <= 90
-    l4 = not(l1)
-    return l1 <= ((l2 and l3) <= l4)
-s = []
-for amin in range(300):
-    for amax in range(amin, 300):
-        flag = True
-        for x in range(-1000, 1000):
-            if not(f(x, amin, amax)):
-                flag = False
-        if flag:
-            s.append(amax - amin)
-print(min(s))
+# def f(x, amin, amax):
+#     l1 = 47 <= x <= 115
+#     l2 = not(amin <= x <= amax)
+#     l3 = 24 <= x <= 90
+#     l4 = not(l1)
+#     return l1 <= ((l2 and l3) <= l4)
+# s = []
+# for amin in range(300):
+#     for amax in range(amin, 300):
+#         flag = True
+#         for x in range(-1000, 1000):
+#             if not(f(x, amin, amax)):
+#                 flag = False
+#         if flag:
+#             s.append(amax - amin)
+# print(min(s))
+#endregion
+
+#region vidosik
+# from ipaddress import *
+# k = 0
+# net = ip_network('172.16.168.0/255.255.248.0')
+# for ip in net:
+#     s = bin(int(ip))[2:]
+#     if s.count('1') % 5 != 0:
+#         k += 1
+# print(k)
+#endreion
+
+#region 19748 (kege)
+from ipaddress import *
+# ip1 = '157.220.185.237/23'
+# ip2 = '157.220.184.230/23'
+#находим маску из двух адресов
+# print(bin(185)[2:])
+# print(bin(184)[2:])
+# net1 = ip_network(ip1,0)
+# net2 = ip_network(ip2, 0)
+# k = 0
+# print(net1)
+# for ip1 in net1:
+#     print(ip1)
+#     s1 = bin(int(ip1))[2:]
+#     print(s1)
+#     if s1.count('1') == 15:
+#         k += 1
+# print(k)
+#endregion
+
+#region 19245 (kege)
+# from ipaddress import *
+# net = ip_network('218.194.82.148/255.255.255.192', 0)
+# for ip in net:
+#     s = bin(int(ip))[2:]
+#     l = str(ip)
+#     print(l.replace('.', ''))
+#
+#
+# 21819482190
+# 21819482190
+#endregion
+
+#region 11243 (решуегэ)
+# s = '1' + '9' * 98
+# while ('19' in s) or ('299' in s) or ('3999' in s):
+#     s = s.replace('19', '2', 1)
+#     s = s.replace('299', '3', 1)
+#     s = s.replace('3999', '1', 1)
+# print(s)
+#endregion
+
+#region 19244 (kege)
+for n in range(3, 10000):
+    s = '1' + '2' * n
+    while ('12' in s) or ('322' in s) or ('222' in s):
+        if '12' in s:
+            s = s.replace('12', '2', 1)
+        if '322' in s:
+            s = s.replace('322', '21', 1)
+        if '222' in s:
+            s = s.replace('222', '3', 1)
+    sum = 0
+    for i in s:
+        sum = sum + int(i)
+    if sum == 15:
+        print(n)
+        break
+#endregion
