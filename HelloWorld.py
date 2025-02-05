@@ -22,6 +22,7 @@
 #         a.append(res)
 # print(min(a))
 #enfregion
+
 #region 18040(кегэ)
 # def f(n):
 #     dubl_n = n
@@ -39,6 +40,7 @@
 #     if fi < 313:
 #         print(i, '   ', fi)
 #endregion
+
 #region 17765(кегэ)
 # print('x y z w')
 # for x in range(0,2):
@@ -48,6 +50,7 @@
 #                 if not((x == ( w or y)) or ((w <= z ) and (y <= w))):
 #                     print(x, y, z, w)
 #endregion
+
 #region 13362(из решуегэ)
 # x = 125 + 25**3 + 5**9
 # print('x =', x)
@@ -61,6 +64,7 @@
 # print(f)
 # print(f.count('0'))
 #endregion
+
 #region 13745(из решуегэ)
 # def f(x, y, A):
 #     return ((x <= 9) <= (x * x <= A)) and ((y * y <= A) <= (y <= 9))
@@ -73,6 +77,7 @@
 #     if flag:
 #         print(A)
 #endregion
+
 #region 59756(поехали 15 из решуегэ)
 # def f(x, y, A):
 #     return (x < A) or (y < A) or (y > x - 5) or(y < 2 * x - 15)
@@ -85,6 +90,7 @@
 #     if flag:
 #         print(A)
 #endregion
+
 #region 34545(решуегэ)
 # def f(x, A):
 #     return (not(x == A) and (32 <= x <= 92)) <= (12 <= x <= 62)
@@ -100,6 +106,7 @@
 #         amass.append('')
 # print(amass) hueta
 #endregion
+
 #region тот же номер^
 # s = []
 # for amin in range(1,100):
@@ -113,6 +120,7 @@
 #             s.append(amax-amin+1)
 # print(min(s)) zaebis'
 #endregion
+
 #region Сашино творенье
 # def diz(a,b):
 #     s = ''
@@ -133,6 +141,7 @@
 #         a = '0'+a
 # print(diz(a,b))
 #endregion
+
 #region какой-то номер
 # def f(x, y, A):
 #     return (x < A) or (y < A) or (y > x - 5) or(y < 2 * x - 15)
@@ -145,6 +154,7 @@
 #     if flag:
 #         print(A)
 #endregion
+
 #region 61361(решуегэ)
 # def f(x, y, A):
 #     return (x + 2 * y > 48) or (y > x) or (x + 3 * y < A)
@@ -157,6 +167,7 @@
 #     if flag == False:
 #         print(A)
 #endregion
+
 # region 34546(решуегэ)
 # s = []
 # for amin in range(1,100):
@@ -170,6 +181,7 @@
 #             s.append(amax-amin+1)
 # print(min(s))
 #endregion
+
 #region 64900(решуегэ)
 # def f(x, A):
 #     l1 = x & 20777 != 0
@@ -185,6 +197,7 @@
 #         print(A)
 #         break
 #endregion
+
 #region 59756(решуегэ)
 # def f(x, y, A):
 #     return (x < A) or (y < A) or (y > x - 5) or (y < 2 * x - 15)
@@ -197,6 +210,7 @@
 #     if flag:
 #         print(A)
 #endregion
+
 #29.01
 #region 19247(кегэ)
 # def f(x, y, A):
@@ -211,6 +225,7 @@
 #         print(A)
 #         break
 #endregion
+
 #region 18971(kege)
 # def f(x, y, A):
 #     return (y > 10) or (x * A > y + x) == 1
@@ -224,6 +239,7 @@
 #         print(A)
 #         break
 #endregion
+
 #region 18930(kege)
 # from pickletools import long1
 #
@@ -240,6 +256,7 @@
 # print(min(s))
 ###залупня ебаная
 #endregion
+
 #region 18266 (kege)
 # def f(x, A):
 #     l1 = x & 57 == 0
@@ -255,6 +272,7 @@
 #         print(A)
 #         break
 #endregion
+
 #region 18175 (kege)
 # def f(x,A):
 #     l1 = x%7 != 0
@@ -269,6 +287,7 @@
 #     if flag:
 #         print(f"FRIENDLY THUG {A} NGG")
 #endregion
+
 #region хз
 # def f(x, y, A):
 #     return (x - y >= 39) or (y <= x) or (y >= A - 20)
@@ -283,6 +302,7 @@
 #     if flag:
 #         print(A)
 #endregion
+
 #region 18044 (kege)
 # def f(x, amin, amax):
 #     l1 = 32 <= x <= 68
@@ -302,6 +322,7 @@
 #             s.append(amax-amin+1)
 # print(min(s))
 #endregion
+
 #region 17528 (kege)
 # def f(x, amin, amax):
 #     l1 = amin <= x <= amax
@@ -319,6 +340,7 @@
 #             s.append(amax-amin)
 # print(max(s))
 #endregion
+
 #region 34546 (kege)
 # def f(x, A):
 #     l1 = x%A != 0
@@ -333,7 +355,8 @@
 #     if flag:
 #         print(A)
 #endregion
-# #region 16262 (kege)
+
+#region 16262 (kege)
 # def f(x, y, A):
 #     return ((A < x) or (x**2 - 7 * x + 10 > 0)) and ((A >= y) or (y**2 + 7 * y + 12 > 0))
 # s = 0
@@ -381,13 +404,13 @@
 #endreion
 
 #region 19748 (kege)
-from ipaddress import *
+# from ipaddress import *
 # ip1 = '157.220.185.237/23'
 # ip2 = '157.220.184.230/23'
 #находим маску из двух адресов
 # print(bin(185)[2:])
 # print(bin(184)[2:])
-# net1 = ip_network(ip1,0)
+# net1 = ip_network(ip1, 0)
 # net2 = ip_network(ip2, 0)
 # k = 0
 # print(net1)
@@ -423,19 +446,131 @@ from ipaddress import *
 #endregion
 
 #region 19244 (kege)
-for n in range(3, 10000):
-    s = '1' + '2' * n
-    while ('12' in s) or ('322' in s) or ('222' in s):
-        if '12' in s:
-            s = s.replace('12', '2', 1)
-        if '322' in s:
-            s = s.replace('322', '21', 1)
-        if '222' in s:
-            s = s.replace('222', '3', 1)
-    sum = 0
-    for i in s:
-        sum = sum + int(i)
-    if sum == 15:
-        print(n)
-        break
+# for n in range(3, 10000):
+#     s = '1' + '2' * n
+#     while ('12' in s) or ('322' in s) or ('222' in s):
+#         if '12' in s:
+#             s = s.replace('12', '2', 1)
+#         if '322' in s:
+#             s = s.replace('322', '21', 1)
+#         if '222' in s:
+#             s = s.replace('222', '3', 1)
+#     sum = 0
+#     for i in s:
+#         sum = sum + int(i)
+#     if sum == 15:
+#         print(n)
+#         break
 #endregion
+
+#region 18862 (kege)
+# from ipaddress import *
+# # k = 0
+# # net = ip_network('172.140.68.0/255.255.248.0', 0)
+# # for ip in net:
+# #     s = bin(int(ip))[2:]
+# #     if s.count('0') > 15:
+# #         k += 1
+# # print(k)
+#endregion
+
+#region 18615 (kege)
+# from ipaddress import *
+# mask = 0
+# for mask in range(33):
+#     net = ip_network(f'143.131.211.37/{mask}', 0)
+#     k = 0
+#     for ip in net:
+#         s = bin(int(ip))[2:]
+#         if s.count('1') == 10:
+#              k += 1
+#         if k > 15:
+#             break
+#     if k == 15:
+#         print(mask)
+#         break
+#endregion
+
+#region 18487 (kege) rot ebal
+# from ipaddress import *
+# net = ip_network('192.214.A.184/255.255.255.224', 0)
+# k = 0
+# A = 0
+# for ip in net:
+#     s = bin(int(ip))[2:]
+#     if s.count('1') == 15:
+#     k += 1
+#     if k > 15:
+#         break
+#     if k == 15:
+#     print()
+#     break
+#endregion
+
+#region Вариант №17467093
+
+#region №1
+# print('№1: в пизду его')
+#endregion
+#region №2
+# print('№2')
+# print('x y z w')
+# for x in range(0,2):
+#     for y in range(0,2):
+#         for z in range(0,2):
+#             for w in range(0,2):
+#                 if (not(x <= w) or (y == z) or y) == 0:
+#                     print(x, y, z ,w)
+#endregion
+
+#endregion
+
+#region Макс
+
+#region №12 yesss
+# s = '0' + '1'*12 + '2'*15 + '3'*17
+# while '01' in s or '02' in s or '03' in s:
+#     s = s.replace('01', '20', 1)
+#     s = s.replace('02', '120', 1)
+#     s = s.replace('03', '302', 1)
+# print(s.count('1'))
+#endregion
+
+#region №13 huynya kakaya-to
+# from ipaddress import *
+# for m in range(33):
+#     ip1 = '231.32.255.131'
+#     ip2 = '255.255.240.0'
+#     net1 = ip_network(ip1, 0)
+#     net2 = ip_network(ip2, 0)
+#     if net1 != net2:
+#         print(bin(int(net1.netmask))[2:])
+#endregion
+
+#region №16 unreal
+# def f(n):
+#     if n == 0:
+#         return 0
+#     if n == 1:
+#         return 1
+#     if n == 1:
+#         return 1
+#     if n > 3:
+#         return f(n - 3) + f(n - 2) + f(n - 1)
+# print(f(9))
+#endregion
+
+#endregion
+
+#region 18955 (kege)
+from ipaddress import *
+ip1 = '200.154.190.12'
+ip2 = '200.154.184.0'
+net1 = ip_network(ip1, 0)
+net2 = ip_network(ip2, 0)
+k = 0
+for ip1 in net1:
+    s = bin(int(ip1))[2:]
+    while s.count('1') and k < 33:
+        k += 1
+print(k)
