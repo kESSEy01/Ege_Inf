@@ -1,0 +1,250 @@
+# s = input().lower()
+# print(f'Аденин {s.count('а')}')
+# print(f'Гуанин: {s.count('г')}')
+# print(f'Цитозин: {s.count('ц')}')
+# print(f'Тимин: {s.count('т')}')
+from contextlib import nullcontext
+from tokenize import Number
+
+# s = input()
+# count = 0
+# for i in range(len(s)):
+#     if '0' <= s[i] <= '9':
+#         count += 1
+# print(count)
+
+# s = input()
+# if s.endswith('.com') or s.endswith('.ru'):
+#     print('YES')
+# else:
+#     print('NO')
+
+# s = input()
+# max = 0
+# zxc = 0
+# for i in s:
+#     if s.count(i) >= max:
+#         max = s.count(i)
+#         zxc = i
+# print(zxc)
+
+# from sys import *
+# s = input()
+# sf = s.find('f', 0, len(s) + 1)
+# ef = s.rfind('f', 0, len(s) + 1)
+# if 'f' not in s:
+#     print('NO')
+#     exit()
+# if sf == ef:
+#     print(sf)
+# if sf != ef:
+#     print(sf, ef)
+
+# s = input()
+# h1 = s.find('h')
+# h2 = s.rfind('h')
+# print(s[:h1], s[h2 + 1:], sep='')
+
+# s = int(input())
+#  САСАААААААААААААААААААТБ
+# for i in range(1, s+1):
+#     str = input()
+#     print(f'{i}: ', end='')
+#     if str.isspace() or str == '':
+#         print('COMMENT SHOULD BE DELETED')
+#     else:
+#         print(str)
+
+
+#region МОЕ ГЕНИАЛЬНОЕ РЕШЕНИЕ
+
+# from sys import *
+#
+# s = input()
+#
+# if len(s) != 10 and len(s) != 9:
+#     print('NO')
+#     exit()
+#
+# def carNumber9(s):
+#     latters = 'АВЕКМНОРСТУХ'
+#     if len(s) == 10:
+#         if s[0] in latters:
+#             if s[1].isdigit():
+#                 if s[2].isdigit():
+#                     if s[3].isdigit():
+#                         if s[4] in latters:
+#                             if s[5] in latters:
+#                                 if s[6] == '_':
+#                                     if s[7].isdigit():
+#                                         if s[8].isdigit():
+#                                             if s[9].isdigit():
+#                                                 flag = True
+#                                             else:
+#                                                 flag = False
+#                                         else:
+#                                             flag = False
+#                                     else:
+#                                         flag = False
+#                                 else:
+#                                     flag = False
+#                             else:
+#                                 flag = False
+#                         else:
+#                             flag = False
+#                     else:
+#                         flag = False
+#                 else:
+#                     flag = False
+#             else:
+#                 flag = False
+#         else:
+#             flag = False
+#     else:
+#         flag = False
+#     return flag
+#
+# def carNumber8(s):
+#     latters = 'АВЕКМНОРСТУХ'
+#     if len(s) == 9:
+#         if s[0] in latters:
+#             if s[1].isdigit():
+#                 if s[2].isdigit():
+#                     if s[3].isdigit():
+#                         if s[4] in latters:
+#                             if s[5] in latters:
+#                                 if s[6] == '_':
+#                                     if s[7].isdigit():
+#                                         if s[8].isdigit():
+#                                             flag = True
+#                                         else:
+#                                             flag = False
+#                                     else:
+#                                         flag = False
+#                                 else:
+#                                     flag = False
+#                             else:
+#                                 flag = False
+#                         else:
+#                             flag = False
+#                     else:
+#                         flag = False
+#                 else:
+#                     flag = False
+#             else:
+#                 flag = False
+#         else:
+#             flag = False
+#     else:
+#         flag = False
+#     return flag
+#
+# if len(s) == 9:
+#     if carNumber8(s):
+#         print('YES')
+#     else:
+#         print('NO')
+#
+# if len(s) == 10:
+#     if carNumber9(s):
+#         print('YES')
+#     else:
+#         print('NO')
+
+#endregion
+
+
+# s = input()
+# if s[1::].isalnum() and s[0] == '@' and 5 <= len(s) <= 15 and s == s.lower():
+#     print('Correct')
+# else:
+#     print('Incorrect')
+
+# firstNum, secondNum = int(input()), int(input())
+# print(f'Для чисел {firstNum} и {secondNum}:', f'    Сумма кубов: {firstNum}**3 + {secondNum}**3 = {(firstNum**3) + (secondNum**3)}', f'    Куб суммы: ({firstNum} + {secondNum})**3 = {(firstNum + secondNum)**3}', sep='\n')
+
+# day = int(input())
+# weight = float(input())
+# if weight <= (100 - 0.2 * day):
+#     print('Все идет по плану')
+#     print(f'#{day} ДЕНЬ: ТЕКУЩИЙ ВЕС = {weight} кг, ЦЕЛЬ по ВЕСУ = {100 - 0.2 * day} кг')
+# else:
+#     print('Что-то пошло не так')
+#     print(f'#{day} ДЕНЬ: ТЕКУЩИЙ ВЕС = {weight} кг, ЦЕЛЬ по ВЕСУ = {100 - 0.2 * day} кг')
+
+# latter = input()
+# latter2 = (chr(ord(latter)+1))
+# if latter == "Я":
+#     print('Дальше букв нет')
+# else:
+#     print(latter2)
+
+# indexLatter1 = int(input())
+# indexLatter2 = int(input())
+# for i in range(indexLatter1, indexLatter2+1):
+#     print(chr(i), end=' ')
+
+# s = input()
+# for i in range(len(s)):
+#     print(ord(s[i]), end=' ')
+
+#region задачка с проверкой 4-х инпутов
+
+# s1 = input()
+# count1 = 0
+#
+# s2 = input()
+# count2 = 0
+#
+# s3 = input()
+# count3 = 0
+#
+# s4 = input()
+# count4 = 0
+#
+# for a in range(len(s1)):
+#     count1 += ord(s1[a])
+#
+# for b in range(len(s2)):
+#     count2 += ord(s2[b])
+#
+# for c in range(len(s3)):
+#     count3 += ord(s3[c])
+#
+# for d in range(len(s4)):
+#     count4 += ord(s4[d])
+#
+# list = [count1, count2, count3, count4]
+# list.sort()
+#
+# if count1 == list[3]:
+#     print(s1)
+# elif count2 == list[3]:
+#     print(s2)
+# elif count3 == list[3]:
+#     print(s3)
+# else:
+#     print(s4)
+
+#endregion
+
+# s = input()
+# counter = 0
+# for i in range(len(s)):
+#     counter += ord(s[i])
+# print(f"Текст сообщения: '{s}'", f'Стоимость сообщения: {counter*3}🐝', sep='\n')
+
+s = str(input())
+counter = 0
+for i in range(len(s)):
+    counter += ord(s[i])
+eng_letters = ['e', 'y', 'o', 'p', 'a', 'x', 'c', 'E', 'T', 'O', 'P', 'A', 'H', 'X', 'C', 'B', 'M']
+ru_letters = ['е', 'у', 'о', 'р', 'а', 'х', 'с', 'Е', 'Т', 'О', 'Р', 'А', 'Н', 'Х', 'С', 'В', 'М']
+for g in range(len(s)):
+    if g in eng_letters:
+        g.replace(eng_letters, ru_letters)
+counter1 = 0
+for c in range(len(s)):
+    counter1 += ord(s[c])
+print(counter*3, counter1*3)
+
